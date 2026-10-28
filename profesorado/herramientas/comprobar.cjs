@@ -22,6 +22,7 @@ class Elemento {
     this.events = {};
     this.hidden = false;
     this.disabled = false;
+    this._innerHTML = "";
   }
   append(e) {
     this.children.push(e);
@@ -30,8 +31,13 @@ class Elemento {
   replaceChildren() {
     this.children = [];
   }
-  querySelector() {
-    return this.children[0];
+  querySelector(sel) {
+    if (sel === "img" || !sel) return this.children[0];
+    return this.children.find((c) => c.className === sel.replace(".", "")) || this.children[0];
+  }
+  querySelectorAll(sel) {
+    if (sel === ".personaje") return this.children.filter((c) => c.className === "personaje");
+    return this.children;
   }
   setAttribute(k, v) {
     this[k] = v;
@@ -46,6 +52,25 @@ class Elemento {
     return this.className === "personaje" ? this : this.parent?.closest();
   }
   focus() {}
+  get innerHTML() {
+    return this._innerHTML;
+  }
+  set innerHTML(value) {
+    this._innerHTML = String(value);
+    this.children = [];
+    const ids = [...this._innerHTML.matchAll(/data-id="(\d+)"/g)].map((m) => Number(m[1]));
+    for (const id of ids) {
+      const boton = new Elemento();
+      boton.className = "personaje";
+      boton.dataset.id = id;
+      boton.hidden = true;
+      boton.disabled = true;
+      const imagen = new Elemento();
+      imagen.src = "img/cayendo.gif";
+      boton.append(imagen);
+      this.append(boton);
+    }
+  }
 }
 
 const nodes = {};

@@ -3,13 +3,13 @@
 ## Entrega válida
 
 - Repo del equipo accesible; `main` abre `index.html` y se puede jugar.
-- Misma estructura de módulos que `inicio/` (o equivalente justificado).
-- Al menos un PR fusionado por responsable de módulo.
+- Cumple el comportamiento de `inicio/JUEGO.md` (la organización en archivos la decide el equipo).
+- Al menos un PR fusionado por integrante.
 - `SEGUIMIENTO.md` coherente con el historial Git.
 
-## Rúbrica técnica
+## Rúbrica
 
-Usad la tabla de [`enunciados/CONCURSO.md`](../enunciados/CONCURSO.md). Contrastad con [`solucion/`](solucion/) solo como referencia: no exige idéntica escritura, sí el comportamiento.
+Usad [`inicio/CONCURSO.md`](../inicio/CONCURSO.md). La [`solucion/`](solucion/) es referencia de comportamiento, no de copia literal.
 
 ### Comprobaciones rápidas por módulo
 

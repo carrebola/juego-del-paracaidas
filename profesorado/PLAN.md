@@ -4,19 +4,19 @@ Duración orientativa: **4 sesiones de 55 minutos**. Ajustad según el grupo.
 
 ## Preparación
 
-- Entregar o enlazar: `enunciados/` (lectura) + carpeta `inicio/` (código).
-- Cada equipo crea su repo remoto y sube `inicio/` como commit inicial.
-- Comunicar rúbrica y que **gana la mejor implementación** del mismo juego.
-- Comprobar `localStorage` con archivos locales en los navegadores del aula.
+- Empezar por la carpeta `inicio/` y su `EMPIEZA_AQUI.md`.
+- Cada equipo crea su repo y sube `inicio/` como primer commit.
+- Dejar claro: mismo juego, gana la mejor implementación.
+- Comprobar `localStorage` en los navegadores del aula.
 
 ## Sesiones
 
 | Sesión | Trabajo | Punto de control |
 |---|---|---|
-| 1 | Repo, roles, PR de `modelo.js` en marcha | 50 objetos/DOM; acuerdo de contratos; primer PR abierto |
-| 2 | `aparicion.js` + `interaccion.js` | Caída, clic abre paracaídas, una llegada contada |
-| 3 | `historial.js` + integración | Fin por 3 impactos; guardar y ver partidas |
-| 4 | Revisión cruzada, casos límite, pulido | Tres dificultades, móvil, `SEGUIMIENTO.md`, demo |
+| 1 | Repo, roles, primer PR (personajes / inicio) | 50 en DOM; acuerdos; PR abierto |
+| 2 | Aparición, movimiento, clic | Caída; paracaídas; llegada contada una vez |
+| 3 | Final + historial | 3 impactos; guardar y ver partidas |
+| 4 | Revisión, casos límite, pulido | Dificultades, móvil, `SEGUIMIENTO.md`, demo |
 
 ## Seguimiento
 

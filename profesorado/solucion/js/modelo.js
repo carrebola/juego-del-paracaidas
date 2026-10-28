@@ -1,28 +1,25 @@
 "use strict";
 
 Juego.crearParacaidistas = function () {
-  Juego.paracaidistas = [];
-  Juego.contenedor.replaceChildren();
+  let html = "";
   for (let id = 0; id < Juego.TOTAL; id++) {
-    const elemento = document.createElement("button");
-    elemento.type = "button";
-    elemento.className = "personaje";
-    elemento.dataset.id = id;
-    elemento.hidden = true;
-    elemento.disabled = true;
-    const imagen = document.createElement("img");
-    imagen.src = "img/cayendo.gif";
-    imagen.alt = "";
-    imagen.draggable = false;
-    elemento.append(imagen);
-    Juego.contenedor.append(elemento);
+    html +=
+      '<button type="button" class="personaje" data-id="' + id + '" hidden disabled>' +
+      '<img src="img/cayendo.gif" alt="" draggable="false">' +
+      "</button>";
+  }
+  Juego.contenedor.innerHTML = html;
+
+  const botones = Juego.contenedor.querySelectorAll(".personaje");
+  Juego.paracaidistas = [];
+  for (let id = 0; id < botones.length; id++) {
     Juego.paracaidistas.push({
       id,
       x: 0,
       y: -Juego.ALTO,
       velocidad: 0,
       estado: "esperando",
-      elemento
+      elemento: botones[id]
     });
   }
 };

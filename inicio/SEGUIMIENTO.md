@@ -1,52 +1,36 @@
 # Seguimiento del equipo
 
-## Integrantes y acuerdos
+Equipo: __________ · Repo: __________ · Fechas: __________
 
-Equipo: __________ · Repo Git: __________ · Fechas: __________
+## Quién hace qué
 
-| Integrante | Archivo / PR | Revisa a |
+| Persona | Parte del juego | Revisa a |
 |---|---|---|
-| | `js/modelo.js` | |
-| | `js/aparicion.js` | |
-| | `js/interaccion.js` | |
-| | `js/historial.js` | |
+| | Personajes / inicio-fin | |
+| | Aparición y movimiento | |
+| | Clic y aterrizaje | |
+| | Historial | |
 
-Enlace al repositorio: __________
+## PR
 
-## Tablero de PR
-
-Estados: pendiente, en curso, en revisión, fusionada.
-
-| PR / rama | Responsable | Revisor | Estado | Evidencia (enlace o prueba) |
-|---|---|---|---|---|
-| feature/modelo | | | | |
-| feature/aparicion | | | | |
-| feature/interaccion | | | | |
-| feature/historial | | | | |
-| Integración final | | | | |
-
-## Registro de sesiones
-
-| Sesión | Qué se fusionó | Bloqueo | Siguiente paso |
+| Rama / PR | Responsable | Revisor | ¿Fusionada? |
 |---|---|---|---|
-| 1 | | | |
-| 2 | | | |
-| 3 | | | |
-| 4 | | | |
+| | | | |
+| | | | |
+| | | | |
+| | | | |
 
-## Aportación individual
+## Comprobado
 
-| Sesión | Persona | Qué programé (PR) | Qué revisé | Qué puedo explicar |
-|---|---|---|---|---|
-| | | | | |
+| Caso | ¿OK? | Quién |
+|---|---|---|
+| Empieza y se ven personajes | | |
+| Clic abre paracaídas | | |
+| 3 impactos terminan | | |
+| Se guarda y se ven partidas | | |
+| Reiniciar varias veces | | |
+| Móvil / ventana pequeña | | |
 
-## Pruebas
+## Notas
 
-| Caso | Esperado | Observado | Quién | Pendiente |
-|---|---|---|---|---|
-| Tercer impacto | Para toda la partida | | | |
-| Reinicios repetidos | Sin timers/eventos duplicados | | | |
-| Tres dificultades | Rangos del enunciado | | | |
-| Historial tras recargar | Conserva registros | | | |
-| Nombre vacío / HTML en nombre | Validación / textContent | | | |
-| Móvil y escritorio | Sin salir de límites | | | |
+-
